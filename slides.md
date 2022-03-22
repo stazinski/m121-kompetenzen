@@ -75,8 +75,6 @@ marp: true
 
 # Quellcode
 
-# Imports
-
 
 ```cpp
 #include <LiquidCrystal.h>
@@ -93,6 +91,15 @@ marp: true
 #define LED_RED 8
 #define BUTTON_INCREASE 9
 #define BUTTON_DECREASE 10
+```
+
+---
+
+# Quellcode
+
+```cpp
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+int count = 0;
 ```
 
 ---
