@@ -12,33 +12,9 @@ marp: true
 
 # Agenda
 
-- Tinkercad
 - Projekt: Counter
+- Tinkercad
 - Quellcode
-
----
-
-# Tinkercad
-
-- Webapplikation für 3D-Design, Elektronik und Programmierung
-- In unserem Fall verwendet für Schaltkreise
-- Virtuelle Komponenten
-
----
-
-# Tinkercad
-
-## Vorteile
-
-- Keine Materialkosten
-- Einfache Verkabelung (kein Löten, Kabel isolieren, etc.)
-- Möglichkeit zur Kollaboration
-
-## Nachteile
-
-- Begrentze Anzahl an Komponenten
-- Weniger Leistung
-- Unübersichtlicher
 
 ---
 
@@ -73,7 +49,41 @@ marp: true
 
 ---
 
+# Counter
+
+## Regelung und Steuerung
+
+- Beim Klicken auf Buttons wird es je nach dem + oder – gezählt. Das ist eine Steuerung.
+- Wenn die Zahl negativ ist, leuchtet es Rot, wenn die Zahl positiv ist, leuchtet es Grün. Das ist eine Regelung.
+
+---
+# Tinkercad
+
+- Webapplikation für 3D-Design, Elektronik und Programmierung
+- In unserem Fall verwendet für Schaltkreise
+- Virtuelle Komponenten
+
+---
+
+# Tinkercad
+
+## Vorteile
+
+- Keine Materialkosten
+- Einfache Verkabelung (kein Löten, Kabel isolieren, etc.)
+- Möglichkeit zur Kollaboration
+- Kann nicht beschädigt werden
+
+## Nachteile
+
+- Begrentze Anzahl an Komponenten
+- Weniger Leistung
+- Unübersichtlicher
+
+---
 # Quellcode
+
+# Imports
 
 
 ```cpp
@@ -91,15 +101,6 @@ marp: true
 #define LED_RED 8
 #define BUTTON_INCREASE 9
 #define BUTTON_DECREASE 10
-```
-
----
-
-# Quellcode
-
-```cpp
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
-int count = 0;
 ```
 
 ---
